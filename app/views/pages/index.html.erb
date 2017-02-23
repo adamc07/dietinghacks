@@ -15,7 +15,10 @@
 <header id="site-header" class="header-style-1" >
   <div id="header-wrapper">
     <div id="header-container" class="clearfix">
-      <div id="site-logo"> <a href="#"> <img src="assets/logo.png"  class="default-logo"> <img src="assets/logo@2x.png" class="retina-logo"> </a> </div>
+      <div id="site-logo">
+      <%= link_to(image_tag 'logo.png', { class: "default-logo"}) %>
+      <%= link_to(image_tag 'logo@2x.png', { class: "retina-logo"}) %>
+      </div>
       <div id="header-sidebar" class="clearfix abc"> </div>
     </div>
   </div>
@@ -50,13 +53,15 @@
           <ul class="menu">
             <li class="share_btns">
               <div>
-                <div style="margin-top:-5px;"> <img src="assets/facebook-like.png"> <img src="assets/button_googleplus_wide.png"> </div>
+                <div style="margin-top:-5px;">
+                <%= image_tag 'facebook-like.png' %>
+                <%= image_tag 'button_googleplus_wide.png' %>
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </nav>
-
     </div>
   </div>
 </div>
@@ -79,8 +84,12 @@
           <h1 class="entry-title">Stay-at-Home Mom Dropped 2 Dress Sizes in 24 Hours using this Technique. Is this too extreme?</h1>
 
           <!-- Author & Date -->
-          <div class="entry-meta"><span class="meta-author-image"><img alt="" src="assets/author-pic.png" height="50" width="50"></span><a class="meta-author url" href="#" title="Article by Megan Freeman" rel="author"><span ><span >Megan Freeman</span></span></a><span class="meta-date">
-            <time class="published" datetime="2017-02-08T16:12:31+00:00" >Wednesday, February 8, 2017</time>
+          <div class="entry-meta">
+          <span class="meta-author-image">
+          <%= image_tag "author-pic.png", { height: "50", width: "50", alt: ""} %>
+          </span>
+          <a class="meta-author url" href="#" title="Article by Megan Freeman" rel="author"><span ><span >Megan Freeman</span></span></a><span class="meta-date">
+            <time class="published" datetime="<%= Date.today %>" ><%= I18n.localize Date.today, format: :long %></time>
             <time class="meta-date-modified updated" datetime="2017-02-09T20:17:13+00:00" >February 9, 2017</time>
             </span>
 
@@ -101,13 +110,15 @@
 
                       <li class="essb_item essb_link_facebook nolightbox"> <a href="#" rel="nofollow" style="
     padding: 8px;
-"> <img src="assets/facebook.png"/> <span class="essb_network_name">Share This Post</span> </a> </li>
+">
+      <%= image_tag 'facebook.png' %>
+      <span class="essb_network_name">Share This Post</span> </a> </li>
 
                       <!--Twitter Share -->
 
                       <li class="essb_item essb_link_twitter nolightbox"> <a href="#" title="" style="
     padding: 8px;
-"> <img src="assets/twitter.png"/> <span class="essb_network_name">Share on Twitter</span></a> </li>
+"> <%= image_tag 'twitter.png' %> <span class="essb_network_name">Share on Twitter</span></a> </li>
                     </ul>
                   </div>
                 </div>
@@ -127,7 +138,9 @@
         </div>
         <div class="post_lead_content clearfix">
 
-            <div> <img class="commerc-img" width="840" height="470" src="assets/main-pic.jpg" alt="Before and After"> </div>
+            <div>
+            <%= image_tag 'main-pic.jpg', { class: "commerc-img", width: "840", height: "470", alt: "Before and After" } %>
+            </div>
 
         </div>
         <div class="entry-content">

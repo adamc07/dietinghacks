@@ -3,6 +3,8 @@ class PagesController < ApplicationController
   end
 
   def index
+    @date = Time.now
+    @date.strftime("%B %d, %Y")
   end
 
 end
