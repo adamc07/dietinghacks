@@ -3,7 +3,10 @@
 
 <!-- Mobile Header -->
 <header id="mobile-site-header" class="mobile-header">
-  <div id="mobile-site-logo"> <a href="#"> <img src="assets/logo_mobile.png" width="346" height="85" alt="dieting-hacks" class="default-logo"> <img src="assets/logo_mobile@2x.png" width="692" height="170" alt="Dieting Hacks TV" class="retina-logo"> </a></div>
+  <div id="mobile-site-logo">
+  <%= link_to(image_tag 'logo_mobile.png', {width: "346", height: "85", alt: "dieting-hacks", class: 'default-logo'}) %>
+  <%= link_to(image_tag 'logo_mobile@2x.png', { width: "692", height: "170", alt: "Dieting Hacks TV", class: "retina-logo"}) %>
+  </div>
 </header>
 <!-- END Mobile Header -->
 
@@ -69,7 +72,6 @@
 
         <!--.entry-header -->
         <header class="entry-header clearfix">
-        <%= render 'shared/modal' %>
           <!-- Breadcrumbs-->
           <h5><a href="#">Health &amp; Beauty ></a> <a href="#">Fast Natural Weight Loss ></a> Brazilian Body Wrap Benefits</h5>
 
