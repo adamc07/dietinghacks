@@ -205,12 +205,12 @@
 
         <div class="results-container">
 		  <p style="margin-bottom:0px;">The Results Speak for Themselves!</p>
-       <img class="results-img" src="assets/b4after-1.png">
-       <img class="results-img" src="assets/b4after-2.png">
-       <img class="results-img" src="assets/b4after-3.png">
-       <img class="results-img" src="assets/b4after-4.png">
-       <img class="results-img" src="assets/b4after-5.png">
-          <img class="results-img" src="assets/b4after-6.png">
+        <%= image_tag 'b4after-1.png', { class: "results-img"} %>
+        <%= image_tag 'b4after-2.png', { class: "results-img"} %>
+        <%= image_tag 'b4after-3.png', { class: "results-img"} %>
+        <%= image_tag 'b4after-4.png', { class: "results-img"} %>
+        <%= image_tag 'b4after-5.png', { class: "results-img"} %>
+        <%= image_tag 'b4after-6.png', { class: "results-img"} %>
 		  </div>
 
       </article>
@@ -249,25 +249,19 @@
 
           <!-- Testimonials -->
           <div id="news_article_block_widget-6" class="widget widget_news_article_block_widget">
-            <div class="author vcard clearfix" style="
-   margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #e8e8e8;
-        text-align: center;
-">
+            <div class="author vcard clearfix" style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e8e8e8; text-align: center;">
 
               <!-- Testimonial #1 -->
-              <!-- Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
-              <img alt="Before and After Testimonial" src="assets/testimonial-1.png"   height="250" width="300" style="float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;">
-              <div class="fn"> <a class="url" href="#" title="" rel="author">Katy Jones</a> </div>
+<!--               Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
+              <%= link_to((image_tag "testimonial-1.png", { height: "250", width: "300", style: "float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;"}), "http://www.google.com", { target: "blank"}) %>
+              <div class="fn">
+                <%= link_to "Katy Jones", "http://www.google.com", { class: "url", title: "", rel: "author", target: "blank"} %>
+              </div>
               <!-- .fn -->
               <div class="author-info description note">
                 <p style="margin-bottom: 0px;">Cras laoreet ultrices dictum. Nunc vehicula, tellus vel sodales condimentum, urna ex tincidunt nisl, luctus gravida nunc nisi at risus. Nam eget bibendum odio. Nam dignissim odio quis ipsum tristique, at luctus ex volutpat. Maecenas ullamcorper imperdiet ante non condimentum.</p>
-             <a href="#" style="margin-bottom: 0px; text-align:center;">
-             Learn More
-				  </a>
+                <%= link_to "Learn More", "http://www.bing.com", { style: "margin-bottom: 0px; text-align:center;", target: "blank"} %>
               </div>
-              <!-- .author-info .description .note -->
               <!-- END Testimonial #1 -->
             </div>
 
@@ -295,37 +289,38 @@
   </div>
               <!-- End Coupon Offer -->
 
-              <div class="author vcard clearfix" style="margin-top: 20px;margin-bottom: 20px;border: 1px solid #e8e8e8;text-align: center;">
-                <!-- Testimonial #2 -->
-                <!-- Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
-                <img alt="Before and After Testimonial" src="assets/testimonial-2.png"   height="250" width="300" style="float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;">
-                <div class="fn"> <a class="url" href="#" title="" rel="author">Alicia Moreau</a> </div>
-                <!-- .fn -->
-                <div class="author-info description note">
-                  <p style="
-    margin-bottom: 0px;
-">Cras laoreet ultrices dictum. Nunc vehicula, tellus vel sodales condimentum, urna ex tincidunt nisl, luctus gravida nunc nisi at risus. Nam eget bibendum odio. Nam dignissim odio quis ipsum tristique, at luctus ex volutpat. Maecenas ullamcorper imperdiet ante non condimentum.</p>
-                <a href="#" style="margin-bottom: 0px; text-align:center;">
-             Learn More
-				  </a>
-                </div>
+            <div class="author vcard clearfix" style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e8e8e8; text-align: center;">
+
+              <!-- Testimonial #2 -->
+<!--               Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
+              <%= link_to((image_tag "testimonial-2.png", { height: "250", width: "300", style: "float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;"}), "http://www.google.com", { target: "blank"}) %>
+              <div class="fn">
+                <%= link_to "Katy Jones", "http://www.google.com", { class: "url", title: "", rel: "author", target: "blank"} %>
+              </div>
+              <!-- .fn -->
+              <div class="author-info description note">
+                <p style="margin-bottom: 0px;">Cras laoreet ultrices dictum. Nunc vehicula, tellus vel sodales condimentum, urna ex tincidunt nisl, luctus gravida nunc nisi at risus. Nam eget bibendum odio. Nam dignissim odio quis ipsum tristique, at luctus ex volutpat. Maecenas ullamcorper imperdiet ante non condimentum.</p>
+                <%= link_to "Learn More", "http://www.bing.com", { style: "margin-bottom: 0px; text-align:center;", target: "blank"} %>
+              </div>
+              <!-- END Testimonial #1 -->
+            </div>
                 <!-- END Testimonial #2 -->
               </div>
-              <div class="author vcard clearfix" style="margin-top: 10px;margin-bottom: 10px;border: 1px solid #e8e8e8;text-align: center;">
-                <!-- Testimonial #3 -->
-                <!-- Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
-                <img alt="Before and After Testimonial" src="assets/testimonial-3.png"   height="250" width="300" style="float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;">
-                <div class="fn"> <a class="url" href="#" title="" rel="author">Drew Snow</a> </div>
-                <!-- .fn -->
-                <div class="author-info description note">
-                  <p style="
-    margin-bottom: 0px;
-">Cras laoreet ultrices dictum. Nunc vehicula, tellus vel sodales condimentum, urna ex tincidunt nisl, luctus gravida nunc nisi at risus. Nam eget bibendum odio. Nam dignissim odio quis ipsum tristique, at luctus ex volutpat. Maecenas ullamcorper imperdiet ante non condimentum.</p>
-                <a href="#" style="margin-bottom: 0px; text-align:center;">
-             Learn More
-				  </a>
-                </div>
+            <div class="author vcard clearfix" style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e8e8e8; text-align: center;">
+
+              <!-- Testimonial #1 -->
+<!--               Testimonials Title  <h3 class="widget-title">Customer Testimonials</h3> -->
+              <%= link_to((image_tag "testimonial-3.png", { height: "250", width: "300", style: "float: none; border-radius: 0; max-width: 220px; margin-bottom: 6px;"}), "http://www.google.com", { target: "blank"}) %>
+              <div class="fn">
+                <%= link_to "Katy Jones", "http://www.google.com", { class: "url", title: "", rel: "author", target: "blank"} %>
               </div>
+              <!-- .fn -->
+              <div class="author-info description note">
+                <p style="margin-bottom: 0px;">Cras laoreet ultrices dictum. Nunc vehicula, tellus vel sodales condimentum, urna ex tincidunt nisl, luctus gravida nunc nisi at risus. Nam eget bibendum odio. Nam dignissim odio quis ipsum tristique, at luctus ex volutpat. Maecenas ullamcorper imperdiet ante non condimentum.</p>
+                <%= link_to "Learn More", "http://www.bing.com", { style: "margin-bottom: 0px; text-align:center;", target: "blank"} %>
+              </div>
+              <!-- END Testimonial #1 -->
+            </div>
             </div>
             <!-- END Testimonial #3 -->
 
@@ -364,7 +359,7 @@
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 800;
-">Tuesday, Feb, 8, 2017 at Midnight</span></p>
+"><%= I18n.localize Date.today, format: :long  %> at Midnight</span></p>
             <div style="">
               <h3 style="
     margin-bottom: 10px;
@@ -377,7 +372,8 @@
             <!-- *************COMMENTS************* -->
 
             <!-- Comment 1-->
-            <div style="margin-bottom: 1.5em; margin-top: 10px; border-bottom: 1px #ccc solid;"> <img src="assets/img-user-221.jpg" style="float:left; max-height: 60px; max-width: 60px;">
+            <div style="margin-bottom: 1.5em; margin-top: 10px; border-bottom: 1px #ccc solid;">
+            <%= image_tag "img-user-221.jpg", { style: "float:left; max-height: 60px; max-width: 60px;"} %>
               <div style="padding-left: 75px;">
                 <p style="margin-bottom: 0;font-weight: bold;">Posted by Sam</p>
                 <p style="line-height: 1.2em;margin-bottom: 1em;/* border-bottom: 1px #ccc solid; */">I stand by this diet. I tried this diet a months ago and I can't say enough about it. This diet helped me lose 28.5 lbs  therought whole program and it completely changed my life. I highly recommend this diet to  ANYONE that's looking to shred unnecessary fat.</p>
@@ -505,13 +501,6 @@
 </div>
 
           <!-- END Comment Form -->
-
-
-
-
-
-
-
 
 
         </article>
