@@ -348,7 +348,8 @@
 .abc {
 	height: 85px;
 	width: 728px;
-  background-image: image-url("logo.png")
+  // background-image: image-url("logo.png")
+  background-image: asset-data-url("ad_728-90-3.png");
   // background-image: image-url('ad_728-90-3.png.png');
 	// background: url('ad_728-90-3.png')
 }
@@ -359,8 +360,8 @@
 	height: 85px;
 	width: 520px;
   // background-image: image-url('ad_728-90-4.png.png');
-  background-image: image-url("logo.png")
-	background: url('ad_728-90-4.png');
+  background-image: image-url("ad_728-90-4.png")
+	// background: url('ad_728-90-4.png');
 }
 }
 
