@@ -1,16 +1,10 @@
-// Graphical variables
-// @import "config/variables";
-// @import "config/bootstrap_variables";
-
 // External libraries
-// @import "bootstrap-sprockets";
-@import "pages/index";
+@import "bootstrap.min";
+@import "bootstrap-responsive";
 // @import "bootstrap";
-// @import "font-awesome-sprockets";
-// @import "font-awesome";
+// @import "bootstrap-sprockets";
 
 // Your CSS
-// @import "layout/index";
-// @import "components/index";
-// @import "vendor/index";
+@import "pages/index";
+
 

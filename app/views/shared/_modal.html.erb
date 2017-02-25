@@ -3,7 +3,7 @@
 <!--  EXIT POPUP  -->
 <!-- FOR POPUP EXIT ONLY -->
 
-<div id="exit_pop" class="modal fade" aria-hidden="true">
+<div id="exit_pop" class="modal hide fade" aria-hidden="true" displayed="false">
 
   <div class="modal-dialog">
     <div class="modal-content">
@@ -22,7 +22,7 @@
         <p class="popoffer1">This limited time offer is <br>
           <span style="text-transform: uppercase;font-weight: bold;font-style: italic;">available today!</span></p>
 
-          <img src="assets/underline.png">
+          <%= image_tag 'underline.png' %>
 
 
 
@@ -42,8 +42,8 @@
       <div class="closebutton2"> <a class="close" data-dismiss="modal">Close</a> </div>
          <div class="closebutton3">  <a class="close" data-dismiss="modal">Close</a> </div>
 
-
-      <img src="assets/placeholder.png" style="margin-top: 5px;" />
+      <%= image_tag 'placeholder.png', { style: "margin-top: 5px;"} %>
+      <!-- <img src="assets/placeholder.png" style="margin-top: 5px;" /> -->
 
     </div>
 

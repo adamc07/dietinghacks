@@ -149,7 +149,7 @@
 	text-decoration: none
 }
 .modal {
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -180,7 +180,7 @@
 	margin: 10px
 }
 .modal-content {
-	background-color: #fff;
+	background-color: #fff !important;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	border-top: 16px solid #76c12f;
@@ -1102,15 +1102,15 @@ h1, h2, h3, h5, h5 a {
 
 
 .modal-open {
-	overflow: hidden
+	overflow: hidden !important;
 }
 .modal {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 1050;
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0!important;
+	left: 0!important;
+	z-index: 1050!important;
 	display: none;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -1374,7 +1374,7 @@ h1, h2, h3, h5, h5 a {
 }
 
 	.popoffer1 {
-		font-size: 29px;
+		font-size: 29px !important;
 		}
 
 	.popoffer2 {

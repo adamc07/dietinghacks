@@ -1,3 +1,4 @@
 $(document).ready(function(){
-  $("body").mouseleave(function(){ $('#exit_pop').modal('show'); });
+  $('body').mouseleave(function(){ $('#exit_pop').modal('show'); });
 });
+
